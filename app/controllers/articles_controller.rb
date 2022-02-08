@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.find(params[:id])
+    @article = Article.new(title:"...",body:"...")
 
     if @article.save
       redirect_to @article
